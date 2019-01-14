@@ -52,7 +52,7 @@ const HeatMapCellRect = ({
             stroke={borderColor}
             strokeOpacity={opacity}
         />
-        {enableLabel && (
+        {enableLabel && value && (
             <text
                 alignmentBaseline="central"
                 textAnchor="middle"
@@ -70,7 +70,7 @@ const HeatMapCellRect = ({
 
 HeatMapCellRect.propTypes = {
     data: PropTypes.object.isRequired,
-    value: PropTypes.number.isRequired,
+    value: PropTypes.number,
     x: PropTypes.number.isRequired,
     y: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,

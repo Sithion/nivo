@@ -27,7 +27,7 @@ HeatMapCellTooltip.propTypes = {
     node: PropTypes.shape({
         xKey: PropTypes.string.isRequired,
         yKey: PropTypes.string.isRequired,
-        value: PropTypes.number.isRequired,
+        value: PropTypes.number,
         color: PropTypes.string.isRequired,
     }).isRequired,
     format: PropTypes.func,
